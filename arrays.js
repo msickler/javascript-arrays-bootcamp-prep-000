@@ -2,10 +2,11 @@ chocolateBars = [
   "snickers", "hundred grand", "kitkat", "skittles"
 ]
 
-function addElementToBeginningOfArray() {
-return  ["milkyway", ...chocolateBars]
+function addElementToBeginningOfArray(array, element) {
+return  [element, ...array]
 }
 
-function destructivelyAddElementToBeginningOfArray() {
-  return(chocolateBars.unshift("m&m"))
+function destructivelyAddElementToBeginningOfArray(array, element) {
+   array.unshift(element)
+   return array
 }
